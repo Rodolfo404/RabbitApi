@@ -14,6 +14,7 @@ namespace Data.Repository
     {
         public void Create(T model)
         {
+
             var factory = new ConnectionFactory() { HostName = "192.168.0.124" };
             using (var connection = factory.CreateConnection())
             using (var channel = connection.CreateModel())
